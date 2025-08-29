@@ -43,8 +43,9 @@ uploadForm.addEventListener("submit", async (e) => {
       throw new Error("Upload failed");
     }
 
-    const data = await res.json();
-    showLink(data.link);
+   const data = await res.json();
+   showLink(`${API_BASE_URL}/file/${data.id}`);
+
   } catch (err) {
     console.error(err);
     alert("Error uploading file.");
