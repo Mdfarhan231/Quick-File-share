@@ -3,6 +3,7 @@
 
 // Ready to integrate with your backend later (just update API_BASE_URL)
 
+// console.log("✅ script.js loaded");
 
 const API_BASE_URL = "https://quick-file-share-backend.onrender.com"; //connecting to render(this is an API link)
 
@@ -31,7 +32,7 @@ uploadForm.addEventListener("submit", async (e) => {
 
   try {
     // 🔧 This is the real fetch call
-    const res = await fetch(`${API_BASE_URL}/upload`, {
+    const res = await fetch(`${API_BASE_URL}/uploads`, {
       method: "POST",
       body: formData,
     });
