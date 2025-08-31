@@ -45,7 +45,8 @@ uploadForm.addEventListener("submit", async (e) => {
     }
 
    const data = await res.json();
-   showLink(`${API_BASE_URL}/file/${data.id}`);
+   showLink(data.link);
+
 
   } catch (err) {
     console.error(err);
