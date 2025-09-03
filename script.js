@@ -3,7 +3,7 @@
 
 // Ready to integrate with your backend later (just update API_BASE_URL)
 
-// console.log("✅ script.js loaded");
+// console.log("script.js loaded");
 
 const API_BASE_URL = "https://quick-file-share-backend.onrender.com"; //connecting to render(this is an API link)
 
